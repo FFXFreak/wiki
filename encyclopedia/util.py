@@ -35,3 +35,20 @@ def get_entry(title):
         return f.read().decode("utf-8")
     except FileNotFoundError:
         return None
+
+def search_entry(title):
+    """
+    Checks if there is a result that is closely matched to
+    the search result
+    """
+    entries = list_entries()
+    results = []
+
+    for entry in entries:
+        if title.lower() in entry.lower():
+            results.append(entry)
+    
+    if results:
+        return results
+    else:
+        return False

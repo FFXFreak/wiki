@@ -13,7 +13,7 @@ h1 {
 }
 
 textarea {
-    height: 90vh;
+    height: 50vh;
     width: 80%;
 }
 
@@ -35,4 +35,24 @@ textarea {
 
 .sidebar h2 {
     margin-top: 5px;
+    text-align: center;
+    font-size: x-large;
+}
+
+.wikiimg {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.textbox {
+    width: 80%;
+}
+
+.edit {
+    font-size: 13px;
+}
+
+.row {
+    width: 95%;
 }

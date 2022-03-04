@@ -1,0 +1,11 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    {{ entry }}
+{% endblock %}
+
+{% block body %}
+<div>{{ req_entry|safe }}</div>
+
+<span class="edit"> <br> Think there is an error? Press <a href="{% url 'wiki:editPage' req_entry=entry %}">Edit Entry</a> to make changes.</span>
+{% endblock %}
